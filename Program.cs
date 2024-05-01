@@ -15,6 +15,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapHealthChecks("/healthz");
 
 var summaries = new[]
 {
